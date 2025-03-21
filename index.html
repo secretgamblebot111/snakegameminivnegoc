@@ -936,6 +936,13 @@
                 <button id="game13-button" onclick="openGame('ho')">Open</button>
             </div>
         </div>
+        <div class="game">
+            <img src="mineisland.avif" alt="CoinFlip Preview">
+            <div class="game-info">
+                <h3 id="game-title">Mine Island</h3>
+                <button id="game13-button" onclick="openGame('mineisland')">Open</button>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -1733,6 +1740,10 @@ function openGame(game) {
         ho: {
             ios: 'ho/index.html',
             other: 'ho/index.html'
+        },
+        mineisland: {
+            ios: 'mineisland/index.html',
+            other: 'mineisland/index.html'
         }
     };
             var url = isIOS ? links[game].ios : links[game].other;
